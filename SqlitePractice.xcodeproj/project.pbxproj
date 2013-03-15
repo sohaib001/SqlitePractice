@@ -16,6 +16,10 @@
 		F845DD8916F30636001D352E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F845DD8816F30636001D352E /* Default.png */; };
 		F845DD8B16F30636001D352E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F845DD8A16F30636001D352E /* Default@2x.png */; };
 		F845DD8D16F30636001D352E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F845DD8C16F30636001D352E /* Default-568h@2x.png */; };
+		F845DD9616F30683001D352E /* DatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F845DD9416F30683001D352E /* DatabaseViewController.m */; };
+		F845DD9716F30683001D352E /* DatabaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F845DD9516F30683001D352E /* DatabaseViewController.xib */; };
+		F845DD9916F30800001D352E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F845DD9816F30800001D352E /* libsqlite3.0.dylib */; };
+		F845DD9B16F3088D001D352E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F845DD9A16F3088D001D352E /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,11 @@
 		F845DD8816F30636001D352E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F845DD8A16F30636001D352E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F845DD8C16F30636001D352E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F845DD9316F30683001D352E /* DatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatabaseViewController.h; path = ../DatabaseViewController.h; sourceTree = "<group>"; };
+		F845DD9416F30683001D352E /* DatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatabaseViewController.m; path = ../DatabaseViewController.m; sourceTree = "<group>"; };
+		F845DD9516F30683001D352E /* DatabaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DatabaseViewController.xib; path = ../DatabaseViewController.xib; sourceTree = "<group>"; };
+		F845DD9816F30800001D352E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		F845DD9A16F3088D001D352E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F845DD9B16F3088D001D352E /* libsqlite3.dylib in Frameworks */,
+				F845DD9916F30800001D352E /* libsqlite3.0.dylib in Frameworks */,
 				F845DD7716F30636001D352E /* UIKit.framework in Frameworks */,
 				F845DD7916F30636001D352E /* Foundation.framework in Frameworks */,
 				F845DD7B16F30636001D352E /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +79,8 @@
 		F845DD7516F30636001D352E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F845DD9A16F3088D001D352E /* libsqlite3.dylib */,
+				F845DD9816F30800001D352E /* libsqlite3.0.dylib */,
 				F845DD7616F30636001D352E /* UIKit.framework */,
 				F845DD7816F30636001D352E /* Foundation.framework */,
 				F845DD7A16F30636001D352E /* CoreGraphics.framework */,
@@ -80,6 +93,9 @@
 			children = (
 				F845DD8516F30636001D352E /* AppDelegate.h */,
 				F845DD8616F30636001D352E /* AppDelegate.m */,
+				F845DD9316F30683001D352E /* DatabaseViewController.h */,
+				F845DD9416F30683001D352E /* DatabaseViewController.m */,
+				F845DD9516F30683001D352E /* DatabaseViewController.xib */,
 				F845DD7D16F30636001D352E /* Supporting Files */,
 			);
 			path = SqlitePractice;
@@ -154,6 +170,7 @@
 				F845DD8916F30636001D352E /* Default.png in Resources */,
 				F845DD8B16F30636001D352E /* Default@2x.png in Resources */,
 				F845DD8D16F30636001D352E /* Default-568h@2x.png in Resources */,
+				F845DD9716F30683001D352E /* DatabaseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +183,7 @@
 			files = (
 				F845DD8316F30636001D352E /* main.m in Sources */,
 				F845DD8716F30636001D352E /* AppDelegate.m in Sources */,
+				F845DD9616F30683001D352E /* DatabaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.controller = [[DatabaseViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController =self.controller;
     [self.window makeKeyAndVisible];
     return YES;
 }
